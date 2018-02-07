@@ -2,7 +2,7 @@
 
 Instagram is a photo sharing app using Parse as its backend.
 
-Time spent: 6 hours spent in total
+Time spent: 8 hours spent in total
 
 ## User Stories
 
@@ -10,21 +10,21 @@ The following **required** functionality is completed:
 
 - [X] User can sign up to create a new account using Parse authentication (+1pt)
 - [X] User can log in and log out of his or her account (+1pt)
-- [ ] The current signed in user is persisted across app restarts (+1pt)
+- [X] The current signed in user is persisted across app restarts (+1pt)
 - [X] User can take a photo, add a caption, and post it to "Instagram" (+2pt)
-- [ ] User can view the last 20 posts submitted to "Instagram" (+2pt)
+- [X] User can view the last 20 posts submitted to "Instagram" (+2pt)
 - [X] User can pull to refresh the last 20 posts submitted to "Instagram" (+1pt)
-- [ ] User can tap a post to view post details, including timestamp and caption (+2pt)
+- [X] User can tap a post to view post details, including timestamp and caption (+2pt)
 
 The following **stretch** features are implemented:
 
-- [ ] Style the login page to look like the real Instagram login page (+1pt)
-- [ ] Style the feed to look like the real Instagram feed (+1pt)
+- [X] Style the login page to look like the real Instagram login page (+1pt)
+- [X] Style the feed to look like the real Instagram feed (+1pt)
 - [ ] User can use a tab bar to switch between all "Instagram" posts and posts published only by the user. AKA, tabs for Home Feed and Profile (+2pt)
 - [ ] Add a custom camera using the CameraManager library (+1pt)
 - [ ] User can load more posts once he or she reaches the bottom of the feed using infinite scrolling (+2pt)
-- [ ] Show the username and creation time for each post using section headers (+1pt)
-- If you use TableView Section Headers to display the the username and creation time, you'll get "sticky headers" similar to the actual Instagram app.
+- [X] Show the username and creation time for each post using section headers (+1pt)
+- [ ] If you use TableView Section Headers to display the the username and creation time, you'll get "sticky headers" similar to the actual Instagram app.
 - [ ] After the user submits a new post, show a progress HUD while the post is being uploaded to Parse (+1pt)
 - User Profiles:
 - [ ] Allow the logged in user to add a profile photo (+2pt)
@@ -48,7 +48,7 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/pcFQhMC.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 

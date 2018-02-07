@@ -13,6 +13,7 @@ class PostCell: UITableViewCell {
     @IBOutlet weak var usernameLabel: UILabel!
     @IBOutlet weak var postImage: UIImageView!
     @IBOutlet weak var commentLabel: UILabel!
+    @IBOutlet weak var timestampLabel: UILabel!
     
     
     override func awakeFromNib() {

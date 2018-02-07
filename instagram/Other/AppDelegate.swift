@@ -24,15 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             })
         )
         
-        /*
+        //*
         if let currentUser = PFUser.current() {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            // view controller currently being set in Storyboard as default will be overridden
             let photoViewController = storyboard.instantiateViewController(withIdentifier: "pictureViewController")
             window?.rootViewController = photoViewController
         }
-        */
- 
+        //*/
+        
         return true
     }
 

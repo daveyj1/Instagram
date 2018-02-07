@@ -14,7 +14,6 @@ class PhotoPickerViewController: UIViewController, UIImagePickerControllerDelega
     @IBOutlet weak var commentLabel: UITextField!
     @IBOutlet weak var myImageView: UIImageView!
     let image = UIImagePickerController()
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,10 +36,18 @@ class PhotoPickerViewController: UIViewController, UIImagePickerControllerDelega
         post["photo"] = imageFile
         post["comment"] = commentLabel.text
         
+        let date = Date()
+        let format = DateFormatter()
+        format.dateFormat = "MM.dd.yyyy"
+        let result = format.string(from: date)
+        
+        post["date"] = result
+        
         post.saveInBackground { (success, error) in
             if success {
                 print("Post was saved!")
             } else {
+                print(error)
                 print("Post could not be saved :(")
             }
         }

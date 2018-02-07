@@ -24,6 +24,9 @@ class pictureViewController: UIViewController, UITableViewDataSource, UITableVie
         refresher.addTarget(self, action: #selector(pictureViewController.getPosts), for: .valueChanged)
         tableView.insertSubview(refresher, at: 0)
         
+        //self.navigationController?.pushViewController(vc, animated: true)
+        //self.navigationController?.setNavigationBarHidden(true, animated: false)
+        
         getPosts()
     }
     
@@ -31,6 +34,7 @@ class pictureViewController: UIViewController, UITableViewDataSource, UITableVie
         let query = PFQuery(className: "Post")
         query.addDescendingOrder("createdAt")
         query.includeKey("user")
+        query.limit = 20
         query.findObjectsInBackground(block:  { (posts, error) in
             if error != nil {
                 print(error?.localizedDescription)
@@ -54,15 +58,6 @@ class pictureViewController: UIViewController, UITableViewDataSource, UITableVie
         present(viewController!, animated: true, completion: nil)
         print("User has been logged out")
     }
-    
-    @IBAction func logout(_ sender: Any) {
-        PFUser.logOut()
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateInitialViewController()
-        present(viewController!, animated: true, completion: nil)
-        print("User has been logged out!")
-    }
-    
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return posts.count
@@ -93,11 +88,24 @@ class pictureViewController: UIViewController, UITableViewDataSource, UITableVie
             cell.commentLabel.text = comment
         }
         
+        if let time = post["date"] as? String {
+            cell.timestampLabel.text = time
+        }
+        
         return cell
     }
     
-    
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "DetailSegue" {
+            let cell = sender as! UITableViewCell
+            if let indexPath = tableView.indexPath(for: cell) {
+                let post = posts[indexPath.row]
+                let dvc = segue.destination as! PhotoDetailViewController
+                dvc.post = post
+            }
+        }
+    }
+ 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

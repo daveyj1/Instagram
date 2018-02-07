@@ -21,6 +21,7 @@
 		D87CD9952020E6CE003C90A8 /* instagramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87CD9942020E6CE003C90A8 /* instagramTests.swift */; };
 		D87CD9A02020E6CE003C90A8 /* instagramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87CD99F2020E6CE003C90A8 /* instagramUITests.swift */; };
 		D87CD9AE2020E915003C90A8 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87CD9AD2020E915003C90A8 /* LoginViewController.swift */; };
+		D8A867A9202946CD00A3F85D /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A867A8202946CD00A3F85D /* PhotoDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		D87CD99F2020E6CE003C90A8 /* instagramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = instagramUITests.swift; sourceTree = "<group>"; };
 		D87CD9A12020E6CE003C90A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D87CD9AD2020E915003C90A8 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D8A867A8202946CD00A3F85D /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
 		D9D2DD3AFA7DC8DC6F419D33 /* Pods_instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEC67B1FAF39F397E69B44CD /* Pods-instagramTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instagramTests/Pods-instagramTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E44E28C461EBECAC89D8C4CD /* Pods-instagramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instagramTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-instagramTests/Pods-instagramTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				D877D0F42028E3740034FE05 /* PhotoPickerViewController.swift */,
 				D87CD9AD2020E915003C90A8 /* LoginViewController.swift */,
 				D85411BE2027735E004F48F1 /* pictureViewController.swift */,
+				D8A867A8202946CD00A3F85D /* PhotoDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -356,11 +359,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-instagram/Pods-instagram-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/Pastel/Pastel.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pastel.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -491,6 +496,7 @@
 				D85411C320278038004F48F1 /* PhotoMapViewController.swift in Sources */,
 				D85411BF2027735E004F48F1 /* pictureViewController.swift in Sources */,
 				D87CD9AE2020E915003C90A8 /* LoginViewController.swift in Sources */,
+				D8A867A9202946CD00A3F85D /* PhotoDetailViewController.swift in Sources */,
 				D87CD9802020E6CE003C90A8 /* AppDelegate.swift in Sources */,
 				D85411C1202773CA004F48F1 /* PostCell.swift in Sources */,
 				D877D0F52028E3740034FE05 /* PhotoPickerViewController.swift in Sources */,
