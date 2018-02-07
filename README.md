@@ -61,7 +61,7 @@ List an 3rd party libraries, icons, graphics, or other assets you used in your a
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+The gif link does not show the gif in the README but it will give a valid link to imigur to view the gif.
 
 ## License
 
